@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Raleway:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Raleway:ital@1&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Barlow', 'Fraunces';
+    font-size: 18px;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* HERO SECTION */
+.hero {
+    background-image: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 85vh;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.navbar .menu {
+    display: flex;
+    font-size: 1rem;
+}
+
+.navbar .menu-list {
+    margin-left: 25px;
+}
+
+.navbar .contact {
+    color: black;
+    background: hsl(0, 0%, 100%);
+    padding: 10px 20px;
+    border-radius: 25px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* HERO HEADER STYLING */
+.header {
+    /* margin: 0 auto; why didn't this work? */
+    text-align: center;
+}
