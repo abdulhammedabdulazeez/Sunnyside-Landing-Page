@@ -211,7 +211,7 @@ li {
 
 .testimony {
     font-family: 'Barlow';
-    font-size: 13px;
+    font-size: 12px;
     margin: 35px 0;
     width: 280px;
 }
@@ -239,10 +239,6 @@ li {
     background-image: url(images/desktop/image-gallery-milkbottles.jpg);
     background-size: cover;
     background-position: center;
-
-    /* height: 150px;
-    width: 150px;
-    border: solid red 1px; */
 }
 
 .gallery-img-2 {
@@ -261,4 +257,42 @@ li {
     background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
     background-size: cover;
     background-position: center;
+}
+
+/* FOOTER SECTION STYLING */
+
+.footer-div {
+    background: hsl(155, 50%, 72%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    padding: 35px 0;
+}
+
+.footer-div h4 {
+    color: hsl(167, 37%, 39%);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.footer-div ul {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-div li {
+    /* margin-right: 30px; */
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.footer-div a {
+    color: hsl(168, 34%, 41%);
+}
+
+.social-links img{
+    width: 12px;
+    height: 12px;
+    margin-right: 15px;
 }
