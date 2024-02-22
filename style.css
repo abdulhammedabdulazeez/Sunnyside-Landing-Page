@@ -31,8 +31,8 @@ li {
     /* background-attachment: fixed; */
     background-position: center;
 
-    height: 85vh;
-    width: 100vw;
+    height: 95vh;
+    /* width: 100vw; */
 }
 
 /* NAVBAR STYLING */
@@ -81,3 +81,96 @@ li {
 /* .header img {
     margin-top: 10px;
 } */
+
+/* SERVICES SECTION */
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column {
+    height: 500px;
+    /* is okay to set the height on the element? */
+}
+
+/* STYLING OF COLUMN 1 & 4 */
+.column-1, .column-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Fraunces';
+}
+
+.column-1 div, .column-4 div {
+    width: 300px;
+}
+
+.column-1 h2, .column-4 h2 {
+    font-size: 28px;
+}
+
+.column-1 p, .column-4 p {
+    color: hsl(210, 4%, 67%);
+    font-size: 13px;
+    margin: 20px 0;
+    font-family: 'Barlow';
+}
+
+.learn-more {
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+/* STYLING OF COLUMN 2 & 3 */
+.column-2 {
+    background-image: url(images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.column-3 {
+    background-image: url(images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* STYLING OF COLUMN 5 & 6 */
+.column-5 {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color: hsl(167, 40%, 24%);
+}
+
+.column-6 {
+    background-image: url(images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color: hsl(198, 62%, 26%);
+}
+
+.column-5, .column-6  {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    font-family: 'Fraunces';
+    font-size: 1.8rem;
+}
+
+.column-5 div, .column-6 div {
+    width: 300px;
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.column-5 p, .column-6 p {
+    font-size: 13px;
+    margin: 20px 0;
+}
