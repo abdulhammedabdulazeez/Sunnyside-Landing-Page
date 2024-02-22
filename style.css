@@ -11,6 +11,7 @@
 body {
     font-family: 'Barlow', 'Fraunces';
     font-size: 18px;
+    line-height: 1.5;
 }
 
 a {
@@ -27,8 +28,11 @@ li {
     background-image: url(images/desktop/image-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
 
     height: 85vh;
+    width: 100vw;
 }
 
 /* NAVBAR STYLING */
@@ -62,3 +66,18 @@ li {
     /* margin: 0 auto; why didn't this work? */
     text-align: center;
 }
+
+.header h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Fraunces';
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+
+    margin: 40px 0;
+}
+
+/* .header img {
+    margin-top: 10px;
+} */
