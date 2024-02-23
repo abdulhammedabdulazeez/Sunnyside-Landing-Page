@@ -45,10 +45,11 @@ li {
 .navbar .menu {
     display: flex;
     font-size: 1rem;
+    gap: 25px;
 }
 
 .navbar .menu-list {
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
 
 .navbar .contact {
@@ -59,6 +60,20 @@ li {
 
     font-size: 12px;
     font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: hsl(0, 0%, 100%);
 }
 
 /* HERO HEADER STYLING */
@@ -309,6 +324,58 @@ li {
 
 @media (max-width: 375px) {
 
+/* STYLING HAMBURGER */
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 10px 0;
+        opacity: 0.9;
+    }
+
+    .menu a {
+        color: hsl(210, 4%, 67%);
+    }
+
+    .menu-list {
+        margin: 8px 0;
+    }
+
+    .menu.active {
+        left: 0px;
+    }
+
+    .navbar .contact {
+        background-color: hsl(51, 100%, 49%);
+        font-size: 1.2rem;
+    }
+
 /* HERO STYLING */
 
     .hero {
@@ -408,10 +475,6 @@ li {
         /* flex-wrap: wrap; which one is better? */
         flex-direction: column;
         gap: 60px;
-    }
-
-    .testimonial {
-        /* margin-bottom: 60px; */
     }
 
     .client-img {
