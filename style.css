@@ -65,6 +65,7 @@ li {
 .header {
     /* margin: 0 auto; why didn't this work? */
     text-align: center;
+    margin: 70px 0;
 }
 
 .header h1{
@@ -75,7 +76,12 @@ li {
     letter-spacing: 10px;
     text-transform: uppercase;
 
-    margin: 40px 0;
+    /* margin: 40px 0; */
+}
+
+.header img {
+    width: 30px;
+    margin-top: 100px;
 }
 
 
@@ -89,7 +95,7 @@ li {
 
 .column {
     height: 500px;
-    /* is okay to set the height on the element? */
+    /* is it okay to set the height on the element? */
 }
 
 /* STYLING OF COLUMN 1 & 4 */
@@ -268,7 +274,7 @@ li {
 }
 
 .footer-div h4 {
-    color: hsl(167, 37%, 39%);
+    color: hsl(167, 46%, 32%);
     font-weight: 900;
     margin-bottom: 20px;
 }
@@ -288,8 +294,202 @@ li {
     color: hsl(168, 34%, 41%);
 }
 
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
 .social-links img{
     width: 12px;
     height: 12px;
-    margin-right: 15px;
+}
+
+
+/* MOBILE STYLING */
+
+@media (max-width: 375px) {
+
+/* HERO STYLING */
+
+    .hero {
+        background-image: url(images/mobile/image-header.jpg);
+        height: 100vh;
+    
+    }
+
+    .header h1{
+        /* padding: 0 20px; */
+        font-size: 2.5rem;
+        margin: 70px 0;
+    }
+
+    .header img {
+        margin-top: 15px;
+        width: 50px;
+    }
+
+/* SEVICES SECTION STYLING */
+
+    .services {
+        grid-template-columns: 1fr;
+
+    }
+
+    .column {
+        height: 500px;
+    }
+
+/* STYLING OF COLUMN 1 & 4 */
+    .column-1, .column-4 {
+        text-align: center;
+    }
+
+    .column-1 h2, .column-4 h2 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    
+    .column-1 p, .column-4 p {
+        color: hsl(210, 4%, 67%);
+        font-size: 18px;
+        font-weight: 600;
+        margin: 28px 0;
+        font-family: 'Barlow';
+    }
+    
+    .learn-more {
+        font-weight: 900;
+        font-size: 18px;
+    
+    }
+
+/* STYLING OF COLUMN 2 & 3 */
+    .column-2 {
+        background-image: url(images/mobile/image-transform.jpg);
+        grid-row: 1 / 2;
+    }
+
+    .column-3 {
+        background-image: url(images/mobile/image-stand-out.jpg);
+    }
+
+/* STYLING OF COLUMN 5 & 6 */
+    .column-5 {
+        background-image: url(images/mobile/image-graphic-design.jpg);
+    }
+
+    .column-6 {
+        background-image: url(images/mobile/image-photography.jpg);
+    }
+
+    .column-5 h5,
+    .column-6 h5 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .column-5 p,
+    .column-6 p {
+        font-size: 15px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+    
+/* TESTIMONIAL SECTION STYLING */
+    .testimonials {
+        padding: 80px 30px;
+    }
+
+    .testimonials h2 {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-container {
+        /* flex-wrap: wrap; which one is better? */
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .testimonial {
+        /* margin-bottom: 60px; */
+    }
+
+    .client-img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .testimony {
+        color: hsl(0, 0%, 51%);
+        font-size: 15px;
+        font-weight: bold;
+        margin: 30px 0;
+    }
+    
+    .name {
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+    
+    .position {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+/* GALLERY SECTION STYLING */
+    .gallery-container {
+        height: 400px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-img-1 {
+        background-image: url(images/mobile/image-gallery-milkbottles.jpg);
+    }
+
+    .gallery-img-2 {
+        background-image: url(images/mobile/image-gallery-orange.jpg);
+    }
+
+    .gallery-img-3 {
+        background-image: url(images/mobile/image-gallery-cone.jpg);
+    }
+
+    .gallery-img-4 {
+        background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+    }
+
+/* FOOTER SECTION STYLING */
+    .footer-div {
+        padding: 50px 35px;
+    }
+
+    .footer-div ul {
+        gap: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-div h4 {
+        color: hsl(167, 46%, 32%);
+        font-weight: 900;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+    }
+
+    .footer-div li {
+        /* margin-right: 30px; */
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 70px;
+    }
+
+    .social-links {
+        gap: 30px;
+    }
+
+    .social-links img{
+        width: 25px;
+        height: 25px;
+    }
+
 }
